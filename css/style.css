@@ -1,8 +1,20 @@
+/* using margin padding float to design template */
+
 :root {
-    --prim: ;
-    --sec: ;
-    --font1: ;
-    --font2: ;
+    --prim: #131c29;
+    --sec: #ff8901;
+    --tert: #f5f5f7;
+    --btnColor: #213349;
+    --date1: #be8442;
+    --date2: #bc6442;
+    --date3: #bd425e;
+    --footerSec2: #0b1016;
+    --grad: radial-gradient(
+        top center,
+        #38587e,
+        #0e1620
+    );
+    --font1: "Oswald", sans-serif;
 }
 
 * {box-sizing: border-box;}
@@ -12,6 +24,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--grad);
 }
 
 /* classes */
