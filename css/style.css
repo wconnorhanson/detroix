@@ -10,7 +10,7 @@
     --date3: #bd425e;
     --footerSec2: #0b1016;
     --grad: radial-gradient(
-        top center,
+        at top center,
         #38587e,
         #0e1620
     );
@@ -32,7 +32,7 @@ body {
 .container {
     margin: 0 auto;
     width: 96%;
-    border: 1px solid coral;
+    /* border: 1px solid coral; */
 }
 
 .content-box {
@@ -50,7 +50,8 @@ body {
 .content-heading {
     color: var(--prim);
     font-family: var(--font1);
-    font-size: calc(32px +(48 - 32) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(36px + (56 - 36) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -62,6 +63,52 @@ body {
 .content-text {
     color: #aaa;
     font-family: sans-serif;
+}
+
+.date {
+    font-size: 32px;
+}
+
+.date, .month {
+    display: block;
+    text-align: center;
+    font-family: var(--font1);
+    color: var(--tert);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.date-div {
+    margin-right: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+}
+
+.date-div, .news-block {
+    float: left;
+}
+
+.footer-content {
+    width: calc(100%/3);
+    /* border: 1px solid yellow; */
+    float: left;
+}
+
+.footer-heading {
+    text-transform: uppercase;
+    color: var(--tert);
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: calc(32px + (48 - 32) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.fs2-text {
+    margin: 0;color: #777;
+    font-family: var(--font1);
+    font-size: 10px;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 .hero-img {
@@ -111,6 +158,10 @@ body {
 
 }
 
+.month {
+    font-size: 18px;
+}
+
 .more-btn {
     padding: 10px 12px;
     color: var(--tert);
@@ -119,6 +170,63 @@ body {
     background-color: var(--btnColor);
     border: none;
     border-radius: 5px;
+}
+
+.news-block {
+    width: 300px;
+    /* border: 1px solid white */
+}
+
+.news-heading {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.news-item {
+    margin-bottom: 15.5px;
+}
+
+.news-link {
+    color: var(--tert);
+    text-decoration: none;
+}
+
+.news-text {
+    margin: 0;
+    color: #555;
+    font-family: sans-serif;
+}
+
+.opps-heading {
+    margin: 0;
+    font-weight: 400;
+}
+
+.opps-item {
+    font-family: sans-serif;
+    padding-bottom: 70px;
+}
+
+.opps-link {
+    color: var(--tert);
+    text-decoration: none;
+}
+
+.opps-text {
+    margin: 0;
+    color: #555;
+}
+
+.services-item {
+    font-family: sans-serif;
+    line-height: 2;
+}
+
+.services-link {
+    color: var(--tert);
+    text-decoration: none;
 }
 
 .slider {
@@ -146,6 +254,29 @@ body {
 }
 
 /* ids */
+
+#dateDiv1 {
+    background-color: var(--date1);
+}
+
+#dateDiv2 {
+    background-color: var(--date2);
+}
+
+#dateDiv3 {
+    background-color: var(--date3);
+}
+
+#footerSection1 {
+    padding: 56px 0 64px;
+    background-color: var(--prim);
+    background-image: var(--grad);
+}
+
+#footerSection2 {
+    padding: 10px 0 60px;
+    background-color: var(--footerSec2);
+}
 
 #headerSection1 {
     width: 100%;
@@ -184,6 +315,21 @@ body {
     /* border: 1px solid dodgerblue; */
     margin: 0;
     float: left;
+}
+
+#newsList {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#oppsList {
+    padding-left: 18px;
+    list-style-image: url('../images/chat.png');
+}
+
+#servicesList {
+    padding-left: 18px;
+    list-style-image: url('../images/cog.png'); 
 }
 
 .clear {
